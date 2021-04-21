@@ -13,8 +13,8 @@ class AnswerWidget extends StatelessWidget {
     this.isSelected = false
   }) : super(key: key);
 
-  Color get _selectedColorRight =>
-    isRight ? AppColors.darkGreen : AppColors.darkRed;
+  // Color get _selectedColorRight =>
+  //   isRight ? AppColors.darkGreen : AppColors.darkRed;
 
   Color get _selectedBorderRight =>
     isRight ? AppColors.lightGreen : AppColors.lightRed;
