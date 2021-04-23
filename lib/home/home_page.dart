@@ -1,3 +1,4 @@
+import 'package:devquiz/challenge/challenge_page.dart';
 import 'package:devquiz/core/core.dart';
 import 'package:devquiz/home/home_controller.dart';
 import 'package:devquiz/home/home_state.dart';
@@ -64,6 +65,9 @@ class _HomePageState extends State<HomePage> {
                       title: quiz.title, 
                       percent: quiz.questionAnswered/quiz.questions.length,
                       completed: "${quiz.questionAnswered}/${quiz.questions.length}",
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => ChallengePage(questions: quiz.questions)));
+                      },
                     )).toList(),
                 )
               ),
